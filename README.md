@@ -4,7 +4,7 @@ Verdict: DON'T SHIP.
 
 The run reached the Soup training setup screen, but I found no evidence that DPO training actually started or changed the model. The GPU stayed idle, no adapter files were saved, and the verification script failed.
 
-See reports/final_report.md for the full report.
+See soup_takehome_RUN_ALL.ipynb for the full report.
 
 ## Files
 
