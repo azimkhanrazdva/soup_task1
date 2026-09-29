@@ -1,0 +1,18 @@
+{
+  "output_dir_exists": true,
+  "output_file_count": 0,
+  "output_files": [],
+  "adapter_files": [],
+  "data_rows": 500,
+  "data_sha256": "865296898ade83727c7a7cd40ea34949e5b13777b3a61f0221d0405862328b3e",
+  "passes_minimum_change_check": false,
+  "margin_probe": null,
+  "margin_probe_error": null,
+  "limitations": [
+    "This detects adapter files and a small behavior shift, not model quality.",
+    "It cannot prove the reference model pass was correct.",
+    "It cannot catch data leakage, bad labels, or reward hacking.",
+    "A non-empty adapter can still be trained on the wrong data/config."
+  ]
+}
+verification failed: no convincing adapter artifact or behavior change

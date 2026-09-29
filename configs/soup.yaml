@@ -1,0 +1,29 @@
+base: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+task: dpo
+
+data:
+  train: ./data/russian_dpo_500.jsonl
+  format: dpo
+  max_length: 4096
+
+training:
+  epochs: 1
+  lr: 5e-6
+  batch_size: 1
+
+  lora:
+    r: 16
+    alpha: 32
+    target_modules: auto
+
+  quantization: 4bit
+  dpo_beta: 0.1
+
+  stream_layers: true
+  stream_source: auto
+  stream_buffers: 2
+
+  seed: 42
+
+output: ./output
+

@@ -1,0 +1,16 @@
+Name: soup-cli
+Version: 0.75.1
+Name: torch
+Version: 2.14.0
+Name: transformers
+Version: 5.17.0
+Name: trl
+Version: 0.29.1
+Name: peft
+Version: 0.21.1
+Name: datasets
+Version: 5.0.1
+Name: accelerate
+Version: 1.15.0
+Name: bitsandbytes
+Version: 0.50.2

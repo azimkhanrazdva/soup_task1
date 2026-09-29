@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/9820 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 9820/9820 [00:00<00:00, 86846.28 examples/s]Generating train split: 100%|██████████| 9820/9820 [00:00<00:00, 86510.83 examples/s]
+source_dataset=eridai/russian_dpo_qa
+source_rows=9820
+sample_seed=42
+written_rows=500
+output=data/russian_dpo_500.jsonl
+sha256=865296898ade83727c7a7cd40ea34949e5b13777b3a61f0221d0405862328b3e

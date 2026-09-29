@@ -1,0 +1,59 @@
+Soup Doctor - checking your environment...
+
+╭─────────────────────────────────── System ───────────────────────────────────╮
+│ Python:   3.12.3                                                             │
+│ Platform: Linux 6.6.122+                                                     │
+│ Arch:     x86_64                                                             │
+│ `soup` runs under /content/soup-env/bin/python; `python` on your PATH is     │
+│ /usr/local/bin/python. site-packages may differ — for any `python -c` check  │
+│ use the soup interpreter explicitly.                                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────── GPU ─────────────────────────────────────╮
+│ CUDA:     available (v13.0)                                                  │
+│ GPUs:     1                                                                  │
+│   GPU 0: Tesla T4 (14.6 GB)                                                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+    System Resources     
+┏━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Resource ┃ Value      ┃
+┡━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ RAM      │ 13 GB      │
+│ Disk     │ 56 GB free │
+└──────────┴────────────┘
+
+                              Dependencies                              
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Package      ┃ Required ┃  Installed   ┃ Min Version ┃ Status        ┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ pydantic     │   yes    │    2.13.5    │ >=2.0.0     │ OK            │
+│ typer        │   yes    │    0.20.1    │ >=0.9.0     │ OK            │
+│ rich         │   yes    │    15.0.0    │ >=13.0.0    │ OK            │
+│ pyyaml       │   yes    │    6.0.3     │ >=6.0       │ OK            │
+│ plotext      │   yes    │    6.1.0     │ >=5.2.0     │ OK            │
+│ fastapi      │ optional │      -       │ >=0.104.0   │ not installed │
+│ uvicorn      │ optional │      -       │ >=0.24.0    │ not installed │
+│ datasketch   │ optional │    2.0.0     │ >=1.6.0     │ OK            │
+│ lm-eval      │ optional │      -       │ >=0.4.0     │ not installed │
+│ wandb        │ optional │      -       │ >=0.15.0    │ not installed │
+│ deepspeed    │ optional │      -       │ >=0.12.0    │ not installed │
+│ httpx        │ optional │    0.28.1    │ >=0.24.0    │ OK            │
+│ unsloth      │ optional │      -       │ >=2024.8    │ not installed │
+│ Pillow       │ optional │      -       │ >=9.0.0     │ not installed │
+│ torchao      │ optional │      -       │ >=0.4.0     │ not installed │
+│ sglang       │ optional │      -       │ >=0.2.0     │ not installed │
+│ librosa      │ optional │      -       │ >=0.10.0    │ not installed │
+│ torch        │ [train]  │ 2.14.0+cu130 │ >=2.6.0     │ OK            │
+│ transformers │ [train]  │    5.17.0    │ >=5.16.1    │ OK            │
+│ peft         │ [train]  │    0.21.1    │ >=0.20.0    │ OK            │
+│ trl          │ [train]  │    0.29.1    │ >=0.29.0    │ OK            │
+│ datasets     │ [train]  │    5.0.1     │ >=2.14.0    │ OK            │
+│ bitsandbytes │ [train]  │    0.50.2    │ >=0.41.0    │ OK            │
+│ accelerate   │ [train]  │    1.15.0    │ >=0.27.0    │ OK            │
+└──────────────┴──────────┴──────────────┴─────────────┴───────────────┘
+
+All checks passed! Your environment is ready.
+
+Config check - task=dpo backend=transformers
+  Every setting this config writes is read on this backend.
+
+GitHub: https://github.com/MakazhanAlpamys/Soup
